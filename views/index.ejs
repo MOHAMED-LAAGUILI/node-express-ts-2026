@@ -1,0 +1,32 @@
+<%- include("partials/head") %>
+<%- include("partials/header") %>
+
+<section class="hero">
+  <h1>Express 5 + TypeScript</h1>
+  <p class="lede">
+    A production-grade 2026 scaffold: JWT authentication, MongoDB persistence,
+    typed controllers, routes, services and middleware. Every API route is
+    locked behind authentication - the EJS views are temporary, ready to be
+    swapped for a Vite + React frontend.
+  </p>
+  <div class="actions">
+    <a class="btn" href="/api-health" id="health-link">Check health</a>
+  </div>
+</section>
+
+<section class="cards">
+  <div class="card">
+    <h2>Auth API</h2>
+    <p>Sign up, sign in and password reset under <code>/auth</code>. Passwords are hashed with bcrypt, sessions use short-lived JWTs.</p>
+  </div>
+  <div class="card">
+    <h2>Protected JSON API</h2>
+    <p>REST endpoints under <code>/tasks</code> (Bearer token required) with Zod validation and per-user scoping in MongoDB.</p>
+  </div>
+  <div class="card">
+    <h2>Env config</h2>
+    <p><code>PORT</code>, <code>MONGODB_URI</code>, <code>JWT_SECRET</code> and <code>CORS_ORIGIN</code> are validated at boot with Zod.</p>
+  </div>
+</section>
+
+<%- include("partials/footer") %>
